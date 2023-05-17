@@ -15,7 +15,7 @@ generate 1000 molecules with a weight adjustment of 0.5 and print them out. ther
 the weight adjustment parameter should be around 1: lower means more weight to more uncommon fragments and thus more diverse molecules, higher means more weight to more common fragments, thus less diverse molecules.
 
 ## some stats
-time to generate 1 million molecules: 76.1 sec on 1 CPU core (Intel® Core™ i5-6600 CPU @ 3.30GHz × 4 ). ~99.9% of the strings were unique.
+time to generate 1 million molecules (weight adjustment 0.5): 76.1 sec on 1 CPU core (Intel® Core™ i5-6600 CPU @ 3.30GHz × 4 ). ~99.9% of the strings were unique.
 
 ## a word of warning
 currently, the merging strategy is purely random. this means some of the molecules will have unstable functionality in there like haloamine, aminals, etc
