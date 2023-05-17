@@ -23,7 +23,8 @@ def gen_mols(N=1000,adj=0.9):
         adj_weights[k]=[a**adj for a in NSSDW[k]]
     cmpds = [gen_mol(adj_weights) for i in range(N)]
     return cmpds
-      
-gm=gen_mols(*sys.argv[1:])
-for smi in gm:
-    print(smi)
+
+if __name__=="__main__":
+    gm=gen_mols(*sys.argv[1:])
+    for smi in gm:
+        print(smi)
