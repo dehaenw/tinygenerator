@@ -1,4 +1,4 @@
-import collections,gzip,pickle,re,random,sys
+import gzip,pickle,random,sys
 
 [CCONN,NSSD,NSSDW,CGC] = pickle.load(gzip.open("model1000.pkl.gz"))
     
